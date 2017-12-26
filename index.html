@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/dialog.css" />
+	</head>
+
+	<body>
+		<input type="button" value="新的" />
+		<input type="button" value="拖拽" />
+		<input type="button" value="方型" />
+		<input type="button" value="长型" />
+	</body>
+	<script src="js/dialog.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var oBtn = document.getElementsByTagName('input');
+		oBtn[0].onclick = function() {
+			var d1 = new Dialog();
+			d1.init({
+				title: '新标题',
+				concent: '新内容'
+			}); 
+		}
+		oBtn[1].onclick = function() {
+			var d1 = new Dialog();
+			d1.init({
+				title: '可移动',
+				drag: true,
+				time: 3
+			});
+		}
+		oBtn[2].onclick = function() {
+			var d1 = new Dialog();
+			d1.init({
+				title: '正方形',
+				width: 100,
+				height: 100
+			}); 
+		}
+		oBtn[3].onclick = function() {
+			var d2 = new Dialog();
+			d2.init({
+				title: '新创建',
+				drag: true,
+				time: 5
+			}); 
+		}
+	</script>
+
+</html>

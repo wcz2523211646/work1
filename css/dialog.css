@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: #fff;
+}
+
+.title {
+	background: #ccc;
+	padding: 0 10px;
+}
+
+.title .close {
+	float: right;
+	cursor: pointer;
+}
+
+.title h3 {
+	text-align: center;
+}
+
+.content {
+	padding: 10px;
+}
+
+.mark {
+	background: #000;
+	opacity: 0.3;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+input {
+	margin: 5px 10px;
+	color: #fff;
+	background: orangered;
+	font-weight: bold;
+}
